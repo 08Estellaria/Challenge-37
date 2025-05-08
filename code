@@ -7,13 +7,13 @@ while True:
         print("Please enter any number from 1 - 50")
 
     for i in range(0, number):
-        Mult2 = i % 2 #Multiple of 2
         Mult3 = i % 3 #Multiple of 3
-        if Mult2 == 0:
-            print("FIZZ")
+        Mult5 = i % 5 #Multiple of 5
         if Mult3 == 0:
+            print("FIZZ")
+        if Mult5 == 0:
             print("BUZZ")
-        if Mult2 == 0 and Mult3 == 0: #Multiple of 2 & 3
+        if Mult3 == 0 and Mult5 == 0: #Multiple of 2 & 3
             print("FIZZ BUZZ")
         else:
             print("OOPS") #Prime number
