@@ -1,0 +1,19 @@
+#Challenge 37
+
+while True: 
+    
+    number = int(input("Enter any number from 1 - 50:" )) #Enter a random number
+    if number < 50 or number > -1: #Validates number?
+        print("Please enter any number from 1 - 50")
+
+    for i in range(0, number):
+        Mult2 = i % 2 #Multiple of 2
+        Mult3 = i % 3 #Multiple of 3
+        if Mult2 == 0:
+            print("FIZZ")
+        if Mult3 == 0:
+            print("BUZZ")
+        if Mult2 == 0 and Mult3 == 0: #Multiple of 2 & 3
+            print("FIZZ BUZZ")
+        else:
+            print("OOPS") #Prime number
